@@ -1,12 +1,17 @@
 #include <windows.h>
+#include <stdio.h>
 
 void foo(void)
 {
-    OutputDebugStringA(
-        "Hello World\n");
+    printf("Hello World\n");
 }
 
 int main()
 {
+    int Integer;
+
+    Integer = 5;
+    Integer = Integer + 2;
+
     foo();
 }
